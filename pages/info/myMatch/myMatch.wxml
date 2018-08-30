@@ -1,0 +1,46 @@
+<!-- <view class='contentBox' wx:for="{{userMessage}}" wx:key="item.id">
+  <view class='content-mess'>
+    <view class='content-item'>
+      <image src='{{item.imgNode}}' mode='aspectFill'  class='imgnode'></image>
+    </view>
+    <view class='content-itemMore'>
+      <view class='thingName'>
+        {{item.matchname}}
+      </view>
+      <view class='timeandpacle'>
+        <text class='palce'>{{item.matchPlace}}</text>
+      </view>
+      <view class='timeandpacle'>
+        <text class='time'> {{item.matchTime}}</text>
+      </view>
+    </view>
+    <view class='content-item'>
+      <view>{{item.time}}</view>
+      <view class='pubed'>{{item.stauts}}</view>
+    </view>
+  </view>
+</view> -->
+
+
+<view class='contentBox'>
+  <view class='content-mess'>
+    <view class='content-item'>
+      <image src='../../../img/yumao.png' mode='aspectFill'  class='imgnode'></image>
+    </view>
+    <view class='content-itemMore'>
+      <view class='thingName'>
+        参赛名称
+      </view>
+      <view class='timeandpacle'>
+        <text class='palce'>参赛地点</text>
+      </view>
+      <view class='timeandpacle'>
+        <text class='time'>参赛时间</text>
+      </view>
+    </view>
+    <view class='content-item'>
+      <view>参赛人数</view>
+      <view class='pubed'>参赛名次</view>
+    </view>
+  </view>
+</view>

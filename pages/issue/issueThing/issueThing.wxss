@@ -1,0 +1,114 @@
+/*addimgbox  */
+.addImg{
+  /* background-color: palegoldenrod; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+/*点击添加封面的图片  */
+.addimgbox2{
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 40px;
+  border: 2px dashed #4fd1d9;
+  color: #4fd1d9;
+}
+
+.addimgbox{
+  margin: 20px 0;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  border: 2px dashed #4fd1d9;
+  color: #4fd1d9;
+}
+
+
+/*imgNodetu  */
+.imgNodetu{
+  width: 95px;
+  height: 90px;
+  /* margin: 10px 0; */
+  border: 1px solid gainsboro;
+}
+.imgBox{
+    width: 30%;
+    
+}
+.imgBox{
+  width: 30%;
+}
+/*marginaut  */
+.marginaut{
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+/*content  */
+.contentBox{
+  margin: 20px auto;
+  font-size: 13px;
+}
+.content{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+   border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro; 
+  padding: 10px 0;
+  justify-content: space-around;
+  margin: 20px 0;
+  background-color: white;
+}
+.content-item{
+  width: 20%;
+}
+.content-itemMore{
+  width: 60%;
+}
+
+.contentNo{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid gainsboro; 
+  padding: 10px 0;
+  justify-content: space-around;
+  background-color: white;
+  
+}
+
+.contentLo{
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid gainsboro;
+  justify-content: space-around;
+  margin: 20px 0;
+  background-color: white;
+  padding: 10px 0;
+}
+
+
+/*sureissue  */
+.sureissue{
+  position: fixed;
+  padding: 4px 5px;
+  background-color: #4fd1d9;
+  bottom: 2%;
+  color: white;
+  left: 40%;
+  border-radius: 3px;
+}
+
+page{
+  background-color: #f8f9fb;
+}

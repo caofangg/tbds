@@ -1,0 +1,65 @@
+<view class='swiper'>
+  <swiper indicator-dots="{{indicatorDots}}" indicator-color="rgba(.3, .5, .7, .3)" indicator-active-color="#fff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode='aspectFill' />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+
+
+
+<view class='contentBox'>
+  <!--循环体  -->
+  <view class='shadow'>
+    <view class='contentNo'>
+      <view class='content-item'>
+        赛区:
+      </view>
+      <view class='content-itemMore'>
+        <text>{{alldata[0].matchname}}</text>
+      </view>
+    </view>
+
+    <view class='contentNo'>
+      <view class='content-item'>
+        比赛主题:
+      </view>
+      <view class='content-itemMore'>
+        <view>{{alldata[0].matchtype}}</view>
+      </view>
+    </view>
+    <view class='contentNo'>
+      <view class='content-item'>
+        开始时间:
+      </view>
+      <view class='content-itemMore'>
+        <text>{{alldata[0].startTime}}</text>
+      </view>
+    </view>
+    <view class='contentNo'>
+      <view class='content-item'>
+        结束时间:
+      </view>
+      <view class='content-itemMore'>
+        <text>{{alldata[0].endTime}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='contentLo shadow'>
+    <view class='content-item'>
+      赛事规则:
+    </view>
+    <view class='content-itemMore'>
+      {{alldata[0].matchGuiZe}}
+    </view>
+  </view>
+
+  <view class='contentWo'>
+    <button class='button'>在线客服</button>
+    <button class='button'>去参与</button>
+  </view>
+</view>

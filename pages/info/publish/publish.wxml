@@ -1,0 +1,39 @@
+
+<!--nav  -->
+<!-- <view class="nav-bar">
+  <view class='nav-bar-item' bindtap='goback'>
+    返回
+  </view>
+  <view class='nav-bar-itemMore'>
+    我的发布
+  </view>
+  <view class='nav-bar-item'>
+  <image src='../../../img/more.png' mode='aspectFill' class='more'></image>
+  </view>
+</view> -->
+
+
+
+<view class='contentBox' wx:for="{{userMessage}}" wx:key="item.id">
+  <view class='content-mess'>
+    <view class='content-item'>
+      <image src='{{item.imgNode}}' mode='aspectFill'  class='imgnode'></image>
+    </view>
+    <view class='content-itemMore'>
+      <view class='thingName'>
+        {{item.matchname}}
+      </view>
+      <view class='timeandpacle'>
+        <text class='palce'>{{item.matchPlace}}</text>
+      </view>
+      <view class='timeandpacle'>
+        <text class='time'> {{item.matchTime}}</text>
+      </view>
+    </view>
+    <view class='content-item'>
+      <view>{{item.time}}</view>
+      <view class='pubed'>{{item.stauts}}</view>
+    </view>
+  </view>
+</view>
+

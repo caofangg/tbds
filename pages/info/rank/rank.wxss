@@ -1,0 +1,34 @@
+/* pages/info/rank/rank.wxss */
+.headNav {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 2rpx solid #ccc
+}
+.headNav text {
+margin-left: 27%;
+}
+.mians {
+margin-top: 10rpx;
+}
+.headNav>.firstTime {
+  margin-left: 10%
+}
+.mians text {
+  margin-left: 20%;
+  /* background-color: palegreen */
+}
+.mians>.Times {
+   margin-left:10rpx;
+   color: #ccc;
+}
+.mians>.lastRank {
+   margin-left: 28%;
+}
+.reds {
+  color: #d12345
+}
+.ss {
+  display: inline-block;
+  width: 60rpx
+}

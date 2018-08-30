@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>   -->
+<!-- 轮播 -->
+<view class='swiper'>
+  <swiper indicator-dots="{{swiper.indicatorDots}}" indicator-color="rgba(.3, .5, .7, .3)" indicator-active-color="#fff" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" class='swiper'>
+    <block wx:for="{{img}}" wx:key="{{item.index}}">
+      <swiper-item>
+        <image src="{{item.imgUrls}}" class="slide-image"mode='aspectFill'/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 导航 -->
+<view class='project'>
+  <navigator wx:for="{{dao}}" wx:key="{{item.text}}" url="{{item.url}}" class='project-item'>
+    <image src='{{item.src}}' mode='aspectFill' class='iconImg'></image>
+    <view>{{item.text}}</view>
+  </navigator>
+
+</view>
+<!-- 消息 -->
+<view class='message'>
+  <image src='/img/喇叭.png'></image>
+  <swiper autoplay='true' circular='true' vertical='true' interval='4000' duration="2000"  class='message-item'>
+    <block wx:for="{{message}}" wx:key="{{item.id}}">
+      <swiper-item>
+        <text class='message-text'>{{item.text}}</text>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+
+<!--line  -->
+<view class='line'>
+  <image src='/img/火焰.png'></image>
+  <text>热门赛事  </text>
+  <text class='line-text'>Hot events</text>
+</view>
+<view class='loopBox' wx:for="{{hotmatch}}" wx:key="{{item.id}}">
+  <view class='loopnameBox'>
+    <view class='loopname'>
+      {{item.name}}
+    </view>
+  </view>
+  <image src='{{item.imgsrc}}' mode='aspectFill' class='imgnof'>
+  </image>
+
+  <navigator class='loopBox-nav' url='../yuesai/yueDetail/yuedetail?id={{item.id}}'>
+    <text>{{item.address}}</text>
+  </navigator>
+
+</view>

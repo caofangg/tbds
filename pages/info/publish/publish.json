@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的发布",
+  "backgroundColor": "#f9f9f9",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}

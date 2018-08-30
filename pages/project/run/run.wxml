@@ -1,0 +1,36 @@
+<view class='swiper'>
+  <swiper indicator-dots="{{indicatorDots}}"
+indicator-color="rgba(.3, .5, .7, .3)"
+indicator-active-color="#fff"
+
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode='aspectFill'/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+
+<view class='title'>
+赛·事
+</view>
+
+<view class='imgDispaly'>
+  <navigator class='sipal' url='../../yuesai/yueDetail/yuedetail?saishi=环清赛'>
+    <image class='imgL' mode='aspectFill' src='../../../img/huanqing.png'></image>
+  </navigator>
+  <navigator class='sipal' url='../../yuesai/yueDetail/yuedetail?saishi=312' >
+     <image class='imgL' mode='aspectFill' src='../../../img/3.12.png'></image>
+  </navigator>
+</view>
+
+<view class='title'>
+跑友·圈
+</view>
+
+
+<navigator class='runmanBox' url='../paoyouquan/paoyouquan'>
+  <view class='titleImg'>生命不息，运动不止。用胶布丈量世界</view>
+  <image class='runmanImg' src='../../../img/tuceng.png' mode='aspectFill'></image>
+</navigator>

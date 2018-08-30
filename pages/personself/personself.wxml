@@ -1,0 +1,121 @@
+
+
+<view class='all-container'>
+<!--centerheader  -->
+  <view class='head'>
+    <view class='head-pculpture'>
+    <image src='{{userinfo.avatarUrl}}' mode='aspectFill' class='imageMess'></image>
+    </view>
+    <view class='signature'>
+     <view>
+        <text class='nickName'>{{userinfo.nickName}}</text>
+      </view>
+    <view class='intruce'> 
+        <view class='jifenWorxd'>我的积分:100</view>
+          <view class='jifenWorxd'>{{myIntegral}}</view>
+    </view>
+    <view class='settings' bindtap='setting'>
+    <image src='../../../img/设置.png' mode='aspectFill' class='iconlogo' ></image>
+    
+    </view>
+    </view>
+  </view>
+
+  <!-- can recode  -->
+  <view class='recode' bindtap='toInfo'>
+    <view class='recode-item'>
+    <image src='../../../img/icon2.png' mode='aspectFill' class='iconlogo' ></image>
+    </view>
+    <view class='recode-itemMore'>个人信息</view>
+    <view class='recode-item'>
+      <image src='../../../img/arrow.png' mode='aspectFill' class='iconlogo' ></image>
+    </view>
+  </view>
+
+<!-- <view class='recode' bindtap='match'>
+    <view class='recode-item'>
+      <image src='../../../img/icon3.png' mode='aspectFill' class='iconlogo' ></image>
+    </view>
+    <view class='recode-itemMore'>我的参赛</view>
+    <view class='recode-item'>
+      <image src='../../../img/arrow.png' mode='aspectFill' class='iconlogo' ></image>
+    </view>
+  </view>
+  <view class='recode' bindtap='publish'>
+    <view class='recode-item'>
+      <image src='../../../img/icon4.png' mode='aspectFill' class='iconlogo' ></image>
+    </view>
+    <view class='recode-itemMore'>我的发布</view>
+    <view class='recode-item'>
+       <image src='../../../img/arrow.png' mode='aspectFill' class='iconlogo' ></image>
+    </view>
+  </view> -->
+
+
+    <view class='recode' bindtap='ranks'>
+      <view class='recode-item'>
+        <image src='../../../img/icon6.png' mode='aspectFill' class='iconlogo' ></image>
+      </view>
+      <view class='recode-itemMore'>积分记录</view>
+      <view class='recode-item'>
+        <image src='../../../img/arrow.png' mode='aspectFill' class='iconlogo' ></image>
+      </view>
+  </view>
+
+
+
+  <view class='recode' bindtap='suggestion'>
+    <view class='recode-item'>
+      <image src='../../../img/icon1.png' mode='aspectFill' class='iconlogo' ></image>
+    </view>
+    <view class='recode-itemMore'>意见反馈</view>
+    <view class='recode-item'>
+       <image src='../../../img/arrow.png' mode='aspectFill' class='iconlogo' ></image>
+    </view>
+  </view>
+</view>
+    <!-- 购买积分 -->
+    <view>
+      <button class='btn' bindtap="sellRank" > 积分购买</button>
+    </view>
+
+
+
+<!--publish  -->
+<!-- <view class='publish-view'>
+  <view class='publish-view-itemImg'>
+    <image src='{{userinfo.avatarUrl}}' mode='aspectFill' class='imagePacther'></image>
+  </view>
+  <view class='publish-view-itemMess'>
+  <view class='yueba'>
+    <view class='yuename'>
+      <text class='nickName'>{{userinfo.nickName}}</text>
+    </view>
+    <view class='yueImg'>
+      <image src=''></image>
+    </view>
+  
+  </view>
+  <view class='mood'>
+    <text>关于你的心情，或者发布的赛事</text>
+  </view>
+  <view class='imgBox'>
+    <view class='imgBox-item'>
+      <image></image>
+    </view>
+    <view class='imgBox-item'>
+      <image></image>
+    </view>
+    <view class='imgBox-item'>
+      <image></image>
+    </view>
+    <view class='imgBox-item'>
+      <image></image>
+    </view>
+  </view>
+  <view class='publish-message'>
+    <view class='publish-time'>2017-9-10</view>
+    <view class='pinlun'>点赞</view>
+  </view>
+  </view>
+</view> -->

@@ -1,0 +1,71 @@
+{
+  "pages": [ 
+    "pages/login/login",
+    "pages/index/index",
+    "pages/personself/personself",
+    "pages/logs/logs",
+    "pages/info/infoMess/infoMess",
+    "pages/info/publish/publish",
+    "pages/yuesai/nowyue/nowyue",
+    "pages/info/suggestion/suggestion",
+    "pages/info/myMatch/myMatch",
+    "pages/yuesai/yueDetail/yuedetail",
+    "pages/issue/issueThing/issueThing",
+    "pages/singup/singup/singup",
+    "pages/run/run",
+    "pages/project/run/run",
+    "pages/project/qiche/qiche",
+    "pages/choujiang/choujiang",
+    "pages/project/paoyouquan/paoyouquan",
+    "pages/info/rank/rank",
+    "pages/run/navigation/navigation", 
+    "pages/certify/certify"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#303135",
+    "navigationBarTitleText": "运动叁陆伍",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#e5e5e5",
+    "onReachBottomDistance": "20"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "backgroundColor": "white",
+    "selectedColor": "#4fd1d9",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/首页.png"
+      },
+      {
+        "pagePath": "pages/yuesai/nowyue/nowyue",
+        "text": "赛事",
+        "iconPath": "img/赛事.png",
+        "selectedIconPath": "img/match-light.png"
+      },
+      {
+        "pagePath": "pages/run/run",
+        "text": "开始",
+        "iconPath": "img/开始.png",
+        "selectedIconPath": "img/start.png"
+      },
+      {
+        "pagePath": "pages/singup/singup/singup",
+        "text": "排名",
+        "iconPath": "img/排名1.png",
+        "selectedIconPath": "img/排名.png"
+      },
+      {
+        "pagePath": "pages/personself/personself",
+        "text": "我的",
+        "iconPath": "img/我的.png",
+        "selectedIconPath": "img/my-light.png"
+      }
+    ]
+  },
+  "debug": true
+}

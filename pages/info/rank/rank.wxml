@@ -1,0 +1,13 @@
+<!--pages/info/rank/rank.wxml-->
+<view class='headNav'>
+<text class='firstTime'>时间</text>
+<text>变更</text>
+<text>积分</text>
+</view>
+
+<!-- 积分具体明细 -->
+<view class='mians' wx:for="{{dataList}}" wx:key="index" >
+  <text class='Times'>{{item.times}}</text>
+  <text class='reds ss' >{{item.addNum}}</text>
+  <text class='lastRank reds ss'>{{item.numRank}}</text>
+</view>

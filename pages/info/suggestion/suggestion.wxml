@@ -1,0 +1,14 @@
+
+<view>
+  <view class='wordBox'>我们希望</view>
+  <view class='wordBox'>拥有相同体育运动爱好的你们</view>
+  <view class='wordBox'>成为朋友</view>
+  <view class='wordBox'>希望您能在这里提出宝贵的意见</view>
+  <view class='wordBox'>我们会更加努力</view>
+</view>
+<view class='textareaBox'>
+  <textarea placeholder='请在这里输入您想说的' class='text' placeholder-class="color" bindblur='bindsave'></textarea>
+</view>
+<view>
+<button  class='margintop' bindtap='saveSugge'>提交</button>
+</view>

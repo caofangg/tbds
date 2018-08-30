@@ -1,0 +1,101 @@
+.nav-bar{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 100rpx;
+  background-color: #393a3e;
+  color: white;
+}
+.nav-bar-item{
+  width: 10%;
+}
+.nav-bar-itemMore{
+  width: 60%;
+  text-align: center;
+}
+
+.loginImg {
+  width: 65rpx;
+  height: 48rpx;
+  margin-right: 30rpx;
+  margin-top: 10rpx;
+}
+.sexs {
+  position: relative;
+  top:-9rpx;
+ left:-17rpx;
+
+}
+
+/*head  */
+.headImg{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin: 15rpx auto;
+  border-bottom: 1px solid ghostwhite;
+  height: 150rpx;
+  justify-content: space-around;
+  align-items: center;
+}
+.headImg-item{
+  width: 50%;
+}
+.color{
+  padding: 0 10rpx;
+  color: gold;
+}
+.headImg-itemMore{
+  width: 50%;
+  text-align: right;
+}
+.imgNode{
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  
+}
+.arrowBox{
+  width: 20%;
+}
+.arrow{
+  width: 20rpx;
+  height: 20rpx;
+}
+
+/*username  */
+.username{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin: 20rpx auto;
+  height: 50px;
+  border-bottom: 1px solid ghostwhite;
+}
+.username-item{
+  width: 50%;
+}
+.userName{
+  width: 50%;
+  text-align: right;
+}
+.pickers {
+/* background-color:palegreen; */
+width:527rpx;
+height:80rpx;
+position:relative;
+top:0rpx;
+left:-157rpx;
+line-height: 80rpx;
+
+
+}
+
+/*sex  */
+radio{
+  padding: 0 5px;
+  font-size: 12px;
+}
+

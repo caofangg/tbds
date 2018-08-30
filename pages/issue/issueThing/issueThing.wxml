@@ -1,0 +1,84 @@
+
+ <view class="addImg"> 
+<!--图片循环体  -->
+       <view class='imgBox' wx:for="{{tempFile}}" wx:for-item="index" wx:key="{{index}}" >
+  <image src="{{tempFile[index]}}" mode='aspectFill'   class='imgNodetu' bindtap='viewImg'></image>
+  </view>    
+</view>  
+
+<view class='marginaut'>
+  <view class="{{_num==1?'addimgbox':'addimgbox2'}}" data-num="1" bindtap='chooseImage'>
+    + 
+     <block wx:if="{{_num==1}}">
+      <text>添加封面</text>
+      </block> 
+    
+    
+    
+    </view> 
+</view>
+  
+
+<view class='contentBox'>
+<!--循环体  -->
+  <view class='content'>
+   <view class='content-item'>
+   标题:
+   </view>
+   <view class='content-itemMore'>
+      <input placeholder='赛事标题' placeholder-class='placeClass' bindblur='getName'></input>
+   </view>
+  </view>
+
+  <view class='contentNo'>
+   <view class='content-item'>
+   比赛主题:
+   </view>
+   <view class='content-itemMore'>
+      <input placeholder='比赛主题' placeholder-class='placeClass' bindblur='getType'></input>
+   </view>
+  </view>
+
+  <view class='contentNo'>
+   <view class='content-item'>
+   赛事路线:
+   </view>
+   <view class='content-itemMore'>
+      <input placeholder='赛事路线' placeholder-class='placeClass' bindblur='getPath'></input>
+   </view>
+  </view>
+  <view class='contentNo'>
+   <view class='content-item'>
+   赛事时间:
+   </view>
+   <view class='content-itemMore'>
+    <picker mode="date" value="{{matchtime}}" start="2018-01-01" end="2100-12-12" bindchange="bindDateChange">
+        <view class="picker">
+          {{matchtime}}
+        </view>
+      </picker>
+   </view>
+  </view>
+
+<view class='contentLo'>
+   <view class='content-item'>
+   赛事规则:
+   </view>
+   <view class='content-itemMore'>
+      <textarea placeholder='赛事规则' placeholder-class='placeClass' bindblur='getGuize'></textarea>
+   </view>
+  </view>
+
+
+<view class='contentLo'>
+   <view class='content-item'>
+   联系方式:
+   </view>
+   <view class='content-itemMore'>
+     <input placeholder='手机号' bindblur='getNumber'></input>
+   </view>
+  </view>
+</view>
+
+
+<view class='sureissue' bindtap='sureissue'>确认发布</view>

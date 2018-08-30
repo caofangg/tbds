@@ -1,0 +1,27 @@
+/* pages/login/login.wxss */
+/* page {
+  background-color: palegoldenrod;
+}*/
+.pages{
+  width: 100%;
+  height: 100%;
+  position: relative;
+} 
+.loginImg{
+  width:100%;
+  margin-bottom:50px;
+  }
+.loginBtn {
+  position: absolute;
+  top:1700rpx;
+  left:30rpx;
+  text-align: center;
+  color: white;
+  z-index: 200; 
+  background-color: #fa8304;
+  width: 700rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 20rpx;
+  font-size: 60rpx;  
+}

@@ -1,0 +1,6 @@
+<!--pages/login/login.wxml-->
+<view class='pages'>
+  <image class='loginImg'   mode='widthFix' src="../../img/certify.png"></image>
+<button class='loginBtn'  bindtap="setCertify" >立即支付</button>
+</view>
+

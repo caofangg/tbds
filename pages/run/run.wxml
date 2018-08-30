@@ -1,0 +1,38 @@
+<map class="mapView" style="width: 100%; height: 100%;" show-location="{{map.showlocation}}" scale="{{map.scale}}" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" polyline='{{polyline}}'>
+    <cover-view class='top'>
+      <cover-view class='top-item'>
+        <cover-view class='top-title top-content'>
+          用时
+        </cover-view>
+        <cover-view class='top-data top-content'>
+          {{time}}
+        </cover-view>
+      </cover-view>
+      <cover-view class='top-line-left'>
+      </cover-view>
+      <cover-view class='top-item top-special'>
+        <cover-view class='top-title top-content'>
+          本次积分
+        </cover-view>
+        <cover-view class='top-data top-content'>
+          {{integration}}
+        </cover-view>
+      </cover-view>
+      <cover-view class='top-line-right'>
+      </cover-view>
+      <cover-view class='top-item'>
+        <cover-view class='top-title top-content'>
+          总里程
+        </cover-view>
+        <cover-view class='top-data top-content'>
+          {{journey}}km
+        </cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='openOutBox'>
+      <cover-view class='openlocal' bindtap="toggleStatus" data-stuts="{{map.stuts}}">{{map.stuts}}</cover-view>
+    </cover-view>
+    <cover-view class='openOutBox-search'>
+      <cover-view class='openlocal-search' bindtap="openlocalSearch">导航</cover-view>
+    </cover-view>
+</map>

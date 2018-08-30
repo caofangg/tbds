@@ -1,0 +1,138 @@
+/*swiper  */
+
+.swiper {
+  height: 180px;
+}
+
+.swiper {
+  height: 180px;
+}
+
+.slide-image {
+  width: 100%;
+}
+
+/*project  */
+
+.project {
+  display: flex;
+  width: 90%;
+  margin: 20rpx auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  width: 24%;
+  text-align: center;
+  font-size: 26rpx;
+  color: #4d4d4d;
+}
+
+.iconImg {
+  width: 50px;
+  height:50px;
+  margin: 25rpx auto auto auto;
+ 
+}
+
+/* message */
+
+.message {
+  height: 32rpx;
+  border-top: 8rpx solid #f5f5f5;
+  padding-bottom: 6rpx;
+  padding-top: 24rpx;
+  font-size: 26rpx;
+}
+
+.message>image {
+  float: left;
+  margin: 0 12rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.message-item {
+  width: 75%;
+  height: 100%;
+  float: left;
+}
+
+.message-text {
+  color: #4d4d4d;
+  margin-left: 4rpx;
+}
+
+.message-more {
+  float: right;
+  color: #ff0037;
+  margin-right: 2rpx;
+}
+
+.message-more::after {
+  float: right;
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABX0lEQVQ4T6XTsUoDQRAG4JkNWN3t4RuIj2FvaWEhmFMkTRTSCSLa6O5WlmIlYiW6cxAkhpBEjZWC2tgo+B4mpXgjQe+yickZ9Mpj57u5nX8Q/vlgUv8W7kQ5hqpHhrrvOnlVYoinJZmNrG+kQHtRzbCIL5HFiiR1weHWZIcn7gDgXpJZHYWkQPfAF8JNAMgHVjdcxCezhgA8CPUBDlLPAS54Vt30EHzySRcGkR9AiiDXBOK8b9VtgjDii7Q6dJGhQIIAcpUFzAVn+rEPeX9dxnL5o3tuJJAigiuCYdYj/ez8zoMkXRwLYMEtjHlZRqbidHEUWH2QCXyP9RoAS4HVJ2kxiOOA1H4yjaxLvBIIRd/qqNe6OJWk9txRjhpjE2MuuG0jQtm3RmfmIA1SzGEQmbpzaTVJentYGvujjHEDGJbcYgRs+aTXf41yO9w9F8yHHpmWs0xTkszmWMv0163+BMmW0xFB54D/AAAAAElFTkSuQmCC);
+  margin-top: 2rpx;
+  margin-right: 24rpx;
+}
+
+/*line  */
+
+.line {
+  border-top: 2rpx solid #f5f5f5;
+  height: 48rpx;
+  margin: 30rpx 0 0 0;
+  font-size: 30rpx;
+  color: #4d4d4d;
+  font-weight: bold;
+  padding-top: 12rpx;
+}
+
+.line>image {
+  margin: 0 12rpx;
+  width: 26rpx;
+  height: 26rpx;
+}
+
+.line-text {
+  font-size: 24rpx;
+  font-weight: normal;
+}
+
+/*loopBox  */
+
+.loopBox {
+  width: 90%;
+  height: 320rpx;
+  margin: 0rpx 32rpx 64rpx 32rpx;
+  font-size: 13px;
+}
+
+.loopnameBox {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgnof {
+  width: 100%;
+  height: 280rpx;
+}
+
+.loopname {
+  text-align: left;
+}
+
+.loopBox-nav {
+  float: left;
+  position: relative;
+  bottom: 80rpx;
+  left: 40rpx;
+  padding: 2rpx 6rpx;
+  background-color: rgb(239, 77, 5);
+  color: white;
+}

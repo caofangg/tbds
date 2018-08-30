@@ -1,0 +1,86 @@
+
+<view class="swiper-tab">  
+   <view class='line'></view>
+   <view class='flexBox'>
+    <view class= "felx-item {{currentTab==0 ? 'onColor' : ''}}" data-current="0" data-type="跑步"  bindtap="swichNav" >
+      <view class="cir {{currentTab==0 ? 'on' : ''}}"></view>
+      周榜
+    </view>
+    <view class= "felx-item {{currentTab==1 ? 'onColor' : ''}}" data-current="1"
+    data-type="月榜" bindtap="swichNav">
+      <view class="cir {{currentTab==1 ? 'on' : ''}}"></view>
+        月榜
+    </view>
+    <view class= "felx-item {{currentTab==2 ? 'onColor' : ''}}" data-current="2" 
+    data-type="季榜" bindtap="swichNav">
+      <view class="cir {{currentTab==2 ? 'on' : ''}}"></view>
+      季榜
+    </view>
+    <view class= "felx-item {{currentTab==3 ? 'onColor' : ''}}" data-current="3" 
+    data-type="年榜" bindtap="swichNav">
+      <view class="cir {{currentTab==3 ? 'on' : ''}}"></view>
+      年榜
+    </view>
+   </view>   
+</view>  
+
+<!-- 我的当前排名 -->
+   <view class='myBigbox'>
+   <view class='myRanking'>
+     我的当前排名
+   </view>
+    <view class='boxmy'>
+    <view class='numRank '>{{myMsg.rank}}</view>
+       <view class='myLoop'>
+            <image src='{{myMsg.userImg}}' mode='aspectFill' class='headimg'></image>
+        </view>
+        <view class='userName'>{{myMsg.username}}
+        </view>
+       <view class='alls'>
+          <view>
+            总里数：{{myMsg.userKm}}万KM
+          </view>
+          <view>总时长：{{myMsg.userTm}}</view>
+       </view>
+       <view class='loginImg'>
+         <image wx:if="{{myMsg.rank <=2 }}"  src='{{imgData[myMsg.rank-1]}}' mode='aspectFill' class='qiansan'></image>
+            <text wx:else class='center'> {{myMsg.rank}} </text> 
+       </view>
+    </view>  
+   </view>
+  
+<swiper current="{{currentTab}}"  style="height:{{heightCurrent-80}}px" class="swiper-box" duration="300" bindchange="bindChange">  
+    <!-- 我是哈哈 -->  
+    <swiper-item>    
+        <view class='boxmy mians' wx:for="{{dataRun}}" wx:key="{{index}}" >
+    <view class="numRank {{index==0 ? 'numOne' : ''}}" >{{item.rank}}</view>
+       <view class='myLoop'>
+            <image src='{{item.userImg}}' mode='aspectFill' class='headimg'></image>
+        </view>
+        <view class='userName'>{{item.username}}
+        </view>
+       <view class='alls'>
+          <view  class='KMS'>
+            总里数：{{item.userKm}}万KM
+          </view>
+          <view>总时长：{{item.userTm}}</view>
+       </view>
+       <view class='loginImg'>
+         <image wx:if="{{item.rank <=3 }}"  src='{{imgData[item.rank-1]}}' mode='aspectFill' class='qiansan'></image>
+            <!-- <text wx:else class='center'> {{item.rank}} </text>  -->
+       </view>
+    </view> 
+    </swiper-item>  
+    <!-- 我是呵呵 -->  
+    <swiper-item>  
+      <view>我是呵呵</view>  
+    </swiper-item>  
+    <!-- 我是嘿嘿 -->  
+    <swiper-item>  
+      <view>我是嘿嘿212</view>  
+    </swiper-item>  
+
+    <swiper-item>  
+      <view>我是嘿嘿2121</view>  
+    </swiper-item> 
+</swiper>  

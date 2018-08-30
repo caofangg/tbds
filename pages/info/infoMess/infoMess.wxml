@@ -1,0 +1,111 @@
+
+<!--nav  -->
+<!-- <view class="nav-bar">
+  <view class='nav-bar-item' bindtap='goback'>
+    返回
+  </view>
+  <view class='nav-bar-itemMore'>
+    基本资料
+  </view>
+  <view class='nav-bar-item'bindtap='saveMess'>
+  保存
+    
+  </view>
+</view> -->
+<!-- img head  -->
+<view class='headImg'>
+  <view class='headImg-item'>
+    <!-- <text class='color'>*</text> -->
+    <text>个人头像</text>
+  </view>
+  <view class='headImg-itemMore'>
+     <image src='{{userinfo.avatarUrl}}' mode='aspectFill' class='imgNode'></image>
+  </view>
+</view>
+
+<!--name  -->
+
+<view class='username'>
+  <view class='username-item'>
+    <!-- <text class='color'>*</text> -->
+    <text>昵称</text>
+  </view>
+  <view class='userName'>
+    <text>{{userinfo.nickName}}</text>
+  </view>
+</view>
+
+<view class='username'>
+  <view class='username-item'>
+    <!-- <text class='color'>*</text> -->
+    <text>性别</text>
+  </view>
+  <view class='userName sex' wx:if='{{sex==1}}' >
+    <image src='../../../img/man.png' mode='aspectFill' class='loginImg' ></image> 
+    <text class='sexs'>男</text>
+  </view>
+  <view class='userName sex' wx:if='{{sex==0}}' >
+    <image src='../../../img/wuman.png' mode='aspectFill' class='loginImg' ></image> 
+    <text  class='sexs'>女</text>
+  </view>
+</view>
+
+<view class='username'>
+  <view class='username-item'>
+    <!-- <text class='color'>*</text> -->
+    <text>出生日期</text>
+  </view>
+  <view class='userName'>
+    <view class="picker">
+      {{date}}
+    </view>
+  </view>
+</view>
+
+<view class='username'>
+  <view class='username-item'>
+    <!-- <text class='color'>*</text> -->
+    <text>所在城市</text>
+  </view>
+  <view class='userName'>
+    <view class="picker">
+     {{region[1]}}
+    </view>
+  </view>
+</view>
+<!-- 会员到期时间 -->
+<view class='username'>
+  <view class='username-item'>
+    <!-- <text class='color'>*</text> -->
+    <text>会员到期</text>
+  </view>
+  <view class='userName'>
+    <view class="picker">
+      {{memberTimes}}
+    </view>
+  </view>
+</view>
+
+<view class='username'>
+  <view class='username-item'>
+    <!-- <text class='color'>*</text> -->
+    <text>手机号码</text>
+  </view>
+  <view class='userName'>
+    <input type='number'   placeholder='填写手机号' bindblur="bindTextAreaBlur"></input>
+  </view>
+</view>
+<!-- 我的地址 -->
+<view class='username'>
+  <view class='username-item'>
+    <!-- <text class='color'>*</text> -->
+    <text>我的地址</text>
+  </view>
+  <view class='userName'>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="pickers">
+ {{region[1]}}{{region[2]}}
+    </view>
+  </picker>
+  </view>
+</view>

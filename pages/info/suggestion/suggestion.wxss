@@ -1,0 +1,27 @@
+.wordBox{
+  font-size: 26rpx;
+  text-align: center;
+  margin: 20rpx auto;
+
+}
+.text{
+  width: 80%;
+  border: 1px solid gainsboro;
+  border-radius: 10rpx;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20rpx 20rpx ;
+}
+.color{
+  color: gray;
+  font-size: 24rpx;
+}
+.margintop{
+  background-color: #4fd1d9;
+  width: 600rpx;
+  margin-top: 40rpx;
+  color: white;
+}
+title{
+  text-align: left;
+}

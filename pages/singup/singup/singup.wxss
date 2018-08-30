@@ -1,0 +1,178 @@
+page{
+  background-color: #f8f9fb;
+}
+
+/*nav  */
+.swiper-tab{
+  height: 150rpx;
+  position: relative
+}
+.line{
+  position: absolute;
+  height: 0;
+  width: 100%;
+  border: 2rpx solid #ccc;
+  top: 30%;
+}
+.flexBox{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  font-size: 26rpx;
+  color: #bbbdbd;
+  top: 10%;
+}
+.felx-item{
+  width: 15%;
+}
+.cir{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+  background-color: #bbbdbd;
+}
+
+
+
+.on{ 
+  background-color:#4fd1d9;
+}  
+.onColor{
+  color: #4fd1d9;
+}
+.numOne {
+  color: red
+}
+.myBigbox {
+  width: 650rpx;
+  height: 200rpx;
+  border: 1rpx rgb(238, 236, 236) solid;
+  margin-left: 50rpx;
+     box-shadow: 0 0  10px rgb(247, 223, 209);
+  
+}
+.mians {
+  margin-left: 50rpx;
+  border-bottom: 2rpx #ddd solid
+}
+.myRanking {
+  background-color: #4fd1d9;
+  color: white;
+  text-align: center  ;
+  width: 300rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 15rpx;
+  position: relative;
+  top:20rpx;
+  left:200rpx;
+} 
+.boxmy {   
+  /* background-color: palegoldenrod; */
+  width: 650rpx;
+  position: relative;
+  height: 120rpx;
+  top:18rpx;
+} 
+.numRank {
+  width: 30rpx;
+  /* border: 2rpx solid #ccc; */
+  position: absolute;
+top:40rpx;
+left: 30rpx;
+ 
+}
+.myLoop {
+ 
+  position: absolute;
+top:10rpx;
+left: 80rpx;
+
+}
+.userName {
+   position: absolute;
+top:25rpx;
+left:200rpx;
+font-size:35rpx;
+color:rgb(170, 162, 162);
+}
+.alls {
+  text-align: left;
+  position: absolute;
+  top:32rpx;
+   left:337rpx;
+  font-size: 20rpx;
+   color: rgb(170, 162, 162);
+}
+.KMS {
+  margin-left: -22rpx;
+}
+.loginImg {
+   position: absolute;
+   top:20rpx;
+   left:570rpx;
+
+}
+.swiper-box{
+  width: 100%; 
+}  
+.swiper-box view{  
+    text-align: center;  
+}   
+
+
+
+/*content  */
+.content{
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  box-shadow: gainsboro 0 0 40rpx;
+  background-color: white;
+  padding: 20rpx 0;
+}
+.loopBox{
+  display: flex;
+  height: 160rpx;
+  margin: 20rpx auto;
+  width: 95%;
+  border-bottom: 2rpx solid rosybrown;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.headimg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+}
+.loop-item{
+  width: 23%;
+  font-size: 24rpx;
+}
+.loop-item view{
+  text-align: left;
+}
+.colorRed{
+  font-size: 28rpx;  
+  color:#e86053;
+}
+
+/*前三名图片  */
+.qiansan{
+   height: 60rpx; 
+   width: 40rpx;
+}
+.outBox{
+  width: 100%;
+  height: 100%;
+}
+.center{
+  text-align: center;
+  font-size: 30rpx;
+  color: #e86053;
+}

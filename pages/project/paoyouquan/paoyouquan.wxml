@@ -1,0 +1,46 @@
+<view class="imgbOx">
+   <image src='' mode='aspectFill' class='imgNode'></image>
+</view>
+
+<view class='title'>
+  跑步的美好
+</view>
+
+
+<view class='timeBox'>
+  <view>
+    <text>2018-2-12</text>
+    
+    <text class='view'>阅读12</text>
+  
+  </view>
+</view>
+
+<view class='wordBox'>
+  我的心情很平静，并不是说已经完全放下对谭大宝的思念，而是心中多出了一个极度踏实的目标等待我去实行。我翌日完成了重要的模特儿工作，也顺便向高桥先生请教了许多关于练习马拉松所需留意的细节。一个多月后，高桥先生就将二度参加檀香山全程马拉松，我问到他：“你会紧张吗？”“不会，是非常期待。”他坚定地回答了我。当时，我完全不能理解他的“期待”之处，但对于“没有人能具体说出马拉松的魅力”这件事，我感到相当好奇。
+</view>
+
+
+
+<!-- 循环  -->
+<view class="imgbOx">
+   <image src='../../../img/yumao.png' mode='aspectFill' class='imgNode'></image>
+</view>
+
+<view class='title'>
+  跑步的美好
+</view>
+
+
+<view class='timeBox'>
+  <view>
+    <text>2018-2-12</text>
+    
+    <text class='view'>阅读12</text>
+  
+  </view>
+</view>
+
+<view class='wordBox'>
+  我的心情很平静，并不是说已经完全放下对谭大宝的思念，而是心中多出了一个极度踏实的目标等待我去实行。我翌日完成了重要的模特儿工作，也顺便向高桥先生请教了许多关于练习马拉松所需留意的细节。一个多月后，高桥先生就将二度参加檀香山全程马拉松，我问到他：“你会紧张吗？”“不会，是非常期待。”他坚定地回答了我。当时，我完全不能理解他的“期待”之处，但对于“没有人能具体说出马拉松的魅力”这件事，我感到相当好奇。
+</view>

@@ -1,0 +1,10 @@
+<view class='view'>
+  <view class='inputDiv'>
+    <input class='input' type='text' placeholder='搜索地点' focus='{{true}}' confirm-type='search' bindinput='bindinput' bindconfirm='bindconfirm'>
+    </input>
+  </view>
+  <view class='information' wx:for="{{address}}" wx:key="{{item.id}}" data-location='{{item.location}}' bindtap='goback'>
+    <view class='name inforbox'>{{item.name}}</view>
+    <view class='address inforbox'>{{item.address}}</view>
+  </view>
+</view>

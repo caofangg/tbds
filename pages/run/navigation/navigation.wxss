@@ -1,0 +1,31 @@
+/* pages/navigation/navigation.wxss */
+.inputDiv{
+  display: flex;
+	border-bottom:#ccc solid 8rpx;
+	padding:16rpx 40rpx 32rpx 40rpx;
+}
+
+.input{
+  background-color: #ccc;
+  width: 100%;
+  border-radius: 2%;
+}
+
+.information{
+  padding-bottom: 12rpx;
+	border-bottom:#ccc solid 6rpx;
+}
+
+.inforbox{
+  padding: 8rpx 0 0 36rpx; 
+}
+
+.name{
+  color: rgba(83, 83, 255, 0.664);
+  font-size: 36rpx;
+}
+
+.address{
+  color: rgb(185, 185, 185);
+  font-size: 28rpx;
+}

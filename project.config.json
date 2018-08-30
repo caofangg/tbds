@@ -1,0 +1,72 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.7.2",
+	"appid": "wxf71a2d9b4d117e6d",
+	"projectname": "runring",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "choujiang",
+					"pathName": "pages/choujiang/choujiang",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "paoyouquan",
+					"pathName": "pages/project/paoyouquan/paoyouquan",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": " 报名",
+					"pathName": "pages/yuesai/yueDetail/yuedetail",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "赛事",
+					"pathName": "pages/yuesai/nowyue/nowyue",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "开始",
+					"pathName": "pages/run/run",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "navigation",
+					"pathName": "pages/run/navigation/navigation",
+					"query": ""
+				}
+			]
+		}
+	}
+}

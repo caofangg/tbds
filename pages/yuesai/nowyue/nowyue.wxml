@@ -1,0 +1,46 @@
+
+<view class='swiper' bindinitializationData="initializationData">
+  <swiper indicator-dots="{{indicatorDots}}" indicator-color="rgba(.3, .5, .7, .3)" indicator-active-color="#fff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode='aspectFill' />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 赛事 -->
+<view wx:for="{{alldata}}" wx:key="{{item.id}}" class='messageBox' 
+  bindtap="{{item.co_state == '1' ? 'goSign' : 'Error'}}"
+  data-id="{{item.id}}">
+  <view class='gameBox'>
+    <view class='gamename'>{{item.co_theme}}</view>
+    <view class='imgMessage'>
+      <view class='imgnodeBox'>
+        <image src='{{ "https://www.yd365.net/" +  item.co_img[0] }}' class='imgnode' mode='aspectFill'></image>
+      </view>
+      <view class='messBox'>
+        <text class='ordergame' style="background-color: {{item.co_state === '1' ? '#4fd1d9' : 'rgb(252,49,10)'}}">{{item.co_state == '1' ? '正在报名' : '已经结束'}}</text>
+        <view class='gametime'>
+          <view class='wordBox'>
+            <text class='timePoint'>开始时间： {{item.co_release_time}}</text>
+          </view>
+        </view>
+
+        <view class='gametime'>
+          <view class='wordBox'>
+            <text class='timePoint'>截止时间： {{item.co_end_time}}</text>
+          </view>
+        </view>
+
+        <view class='gametime'>
+          <view class='wordBox'>
+            <text class='timePoint'>活动地点: {{item.co_city}}</text>
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+  </view>
+
+</view>
